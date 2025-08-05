@@ -3,7 +3,9 @@
 	--color-green-500: #4ee749;
 	--color-green-700: #4d694c;
 	--color-light-200: #ececec;
+	--color-gray-400: #a5a5a5;
 	--color-gray-700: #3f3f3f;
+	--color-gray-800: #2c2c2c;
 	--color-bg-300: #3d493f;
 	--color-bg-500: #2f3833;
 	--color-bg-800: #222422;
@@ -19,6 +21,7 @@
 }
 
 body {
+	min-height: 100vh;
 	background: var(--color-bg-900);
 	color: var(--color-light-200);
 	font-family: 'Inter', Arial, Helvetica, sans-serif;
