@@ -1,0 +1,37 @@
+:root {
+	--color-green-100: #b9fd60;
+	--color-green-500: #4ee749;
+	--color-green-700: #4d694c;
+	--color-light-200: #ececec;
+	--color-gray-700: #3f3f3f;
+	--color-bg-300: #3d493f;
+	--color-bg-500: #2f3833;
+	--color-bg-800: #222422;
+	--color-bg-900: #1b1b1b;
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--color-bg-900);
+	color: var(--color-light-200);
+	font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+img {
+	display: block;
+}
+
+li {
+	list-style: none;
+}
+
+span {
+	display: inline-block;
+}
