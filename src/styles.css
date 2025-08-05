@@ -1,3 +1,5 @@
 @import url(normalize.css);
 @import url(./styles/global/fonts.css);
 @import url(./styles/global/boilerplate.css);
+@import url(./styles/dashboard.css);
+@import url(./components/left-sidebar.css);
