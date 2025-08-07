@@ -1,2 +1,2 @@
 import './styles.css';
-import './scripts/page-load';
+import './scripts/left-sidebar/left-sidebar';

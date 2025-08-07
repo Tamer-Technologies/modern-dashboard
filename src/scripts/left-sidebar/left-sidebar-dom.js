@@ -1,4 +1,4 @@
-import { user, sidebarSectionLeft } from './data';
+import { user, sidebarSectionLeft } from '../data';
 
 function renderSidebarData(containerClass, htmlString) {
 	const containerDOM = document.querySelector(`.${containerClass}`);
