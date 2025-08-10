@@ -49,6 +49,113 @@
 					</svg>
 				</div>
 			</aside>
+
+			<main class="main">
+				<section class="main__section">
+					<h2 class="main__section-title">Analytics</h2>
+					<div class="main__section-body">
+						<div class="analytics-section">
+							<div class="analytics-section__metrics">
+								<span class="analytics-section__current-value"
+									>Current Value: $250,500</span
+								>
+								<div class="analytics-section__metrics-cards">
+									<div class="metrics-card">
+										<div class="metrics-card__header">
+											<h6 class="metrics-card__title">Change Today</h6>
+											<span class="metrics-card__time">last month</span>
+										</div>
+										<div class="metrics-card__body">
+											<div class="metrics-card__value">+$5.50</div>
+											<div class="metrics-card__chart">
+												<canvas id="change-today__chart"></canvas>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="analytics-section__analytic-charts">
+								<div class="financial-track">
+									<div class="extended-chart-container">
+										<div class="chart-header">
+											<span class="chart-header__chart-title">Financial</span>
+											<div class="chart-header__chart-colors">
+												<div class="chart-color">
+													<div class="chart-color__color"></div>
+													<span class="chart-color__color-representation"
+														>income</span
+													>
+												</div>
+												<div class="chart-color">
+													<div class="chart-color__color"></div>
+													<span class="chart-color__color-representation"
+														>expense</span
+													>
+												</div>
+											</div>
+											<div class="chart-body">
+												<canvas class="extended-chart"></canvas>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- ------------------------ -->
+
+								<div class="allocation-track">
+									<div class="donut-chart-container">
+										<div class="chart-header">
+											<span class="chart-header__chart-title">Allocation</span>
+											<div class="chart-header__chart-colors">
+												<div class="chart-color">
+													<div class="chart-color__color"></div>
+													<span class="chart-color__color-representation"
+														>income</span
+													>
+												</div>
+											</div>
+											<div class="chart-body">
+												<canvas class="donut-chart"></canvas>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- ------------------------ -->
+
+								<div class="performance-track">
+									<div class="extended-chart-container">
+										<div class="chart-header">
+											<span class="chart-header__chart-title"
+												>Monthly Performance</span
+											>
+											<div class="chart-header__chart-colors">
+												<div class="chart-color">
+													<div class="chart-color__color"></div>
+													<span class="chart-color__color-representation"
+														>income</span
+													>
+												</div>
+												<div class="chart-color">
+													<div class="chart-color__color"></div>
+													<span class="chart-color__color-representation"
+														>expense</span
+													>
+												</div>
+											</div>
+											<div class="chart-body">
+												<canvas class="extended-chart"></canvas>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- ------------------------ -->
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
 		</div>
 	</body>
 </html>
