@@ -1,15 +1,55 @@
 :root {
-	--color-green-100: #b9fd60;
-	--color-green-500: #4ee749;
-	--color-green-700: #4d694c;
-	--color-light-200: #ececec;
-	--color-gray-400: #a5a5a5;
-	--color-gray-700: #3f3f3f;
-	--color-gray-800: #2c2c2c;
-	--color-bg-300: #3d493f;
-	--color-bg-500: #2f3833;
-	--color-bg-800: #222422;
-	--color-bg-900: #1b1b1b;
+	/* Colors */
+	--primary-color: #b9fd60;
+	--secondary-color: #2ea928;
+	--text-color-dark: #222422;
+	--text-color-gray: #a4a4a4;
+	--text-color-light: #fff;
+	--background-color-secondary: #272727;
+	--background-color-primary: #1b1b1b;
+
+	/* Spacing Scale (T-shirt sizes) */
+	--space-xs: 0.25rem; /* 4px */
+	--space-sm: 0.5rem; /* 8px */
+	--space-md: 1rem; /* 16px */
+	--space-lg: 1.5rem; /* 24px */
+	--space-xl: 2rem; /* 32px */
+	--space-2xl: 3rem; /* 48px */
+	--space-3xl: 4rem; /* 64px */
+	--space-4xl: 6rem; /* 96px */
+
+	/* Component-specific spacing (em-based) */
+	--space-em-xs: 0.25em;
+	--space-em-sm: 0.5em;
+	--space-em-md: 1em;
+	--space-em-lg: 1.5em;
+
+	/* Font Sizes */
+	--font-size-xs: 0.75rem; /* 12px */
+	--font-size-sm: 0.875rem; /* 14px */
+	--font-size-base: 1rem; /* 16px */
+	--font-size-lg: 1.125rem; /* 18px */
+	--font-size-xl: 1.25rem; /* 20px */
+	--font-size-2xl: 1.5rem; /* 24px */
+	--font-size-3xl: 1.875rem; /* 30px */
+	--font-size-4xl: 2.25rem; /* 36px */
+	--font-size-5xl: 3rem; /* 48px */
+	--font-size-6xl: 3.75rem; /* 60px */
+
+	/* Font Weights */
+	--font-weight-medium: 500;
+	--font-weight-semibold: 600;
+	--font-weight-bold: 700;
+	--font-weight-extrabold: 800;
+
+	/* Border Radius */
+	--radius-sm: 0.5rem; /* 8px */
+	--radius-md: 0.75rem; /* 12px */
+	--radius-lg: 1rem; /* 16px */
+	--radius-xl: 1.5rem; /* 24px */
+	--radius-2xl: 3rem; /* 48px */
+	--radius-3xl: 6rem; /* 96px */
+	--radius-full: 9999px; /* Full circle */
 }
 
 *,
@@ -22,8 +62,8 @@
 
 body {
 	min-height: 100vh;
-	background: var(--color-bg-900);
-	color: var(--color-light-200);
+	background: var(--background-color-primary);
+	color: var(--text-color-gray);
 	font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
 
