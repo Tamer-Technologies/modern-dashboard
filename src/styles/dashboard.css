@@ -3,3 +3,15 @@
 	display: grid;
 	grid-template-columns: minmax(280px, 2fr) 9fr;
 }
+
+.main__section {
+	min-height: 100%;
+	padding: var(--space-2xl);
+	display: grid;
+	grid-template-rows: var(--space-3xl) 1fr;
+}
+
+.main__section-title {
+	font-size: var(--font-size-4xl);
+	color: var(--text-color-light);
+}

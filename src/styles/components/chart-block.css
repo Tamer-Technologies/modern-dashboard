@@ -1,0 +1,43 @@
+.extended-chart-container,
+.donut-chart-container {
+	min-height: 100%;
+	padding: var(--space-lg);
+	display: grid;
+	grid-template-rows: auto auto;
+}
+
+.chart-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	color: var(--text-color-light);
+}
+
+.chart-header__chart-title {
+	font-size: var(--font-size-base);
+	font-weight: var(--font-weight-semibold);
+}
+
+.chart-header__chart-colors {
+	display: flex;
+	gap: var(--space-2xl);
+	justify-content: flex-end;
+}
+
+.chart-color {
+	display: flex;
+	align-items: center;
+	gap: var(--space-md);
+}
+
+.chart-color__color {
+	width: var(--space-md);
+	border-radius: var(--radius-full);
+	aspect-ratio: 1/1;
+	background-color: var(--primary-color);
+}
+
+.chart-body {
+	padding-top: var(--space-md);
+	min-height: 130px;
+}

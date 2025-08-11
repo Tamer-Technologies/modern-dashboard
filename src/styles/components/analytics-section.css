@@ -1,0 +1,58 @@
+.analytics-section {
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: auto 1fr;
+	gap: var(--space-xl);
+}
+
+.analytics-section__metrics {
+	display: grid;
+	grid-template-rows: var(--space-2xl) auto;
+}
+
+.analytics-section__current-value {
+	color: var(--primary-color);
+	place-self: center start;
+}
+
+.analytics-section__metrics-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: var(--space-xl);
+}
+
+.analytics-section__analytic-charts {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: minmax(70px, auto) minmax(70px, auto);
+
+	grid-template-areas:
+		'financial financial allocation'
+		'performance performance performance';
+	gap: var(--space-xl);
+
+	@media (width < 71.875rem) {
+		grid-template-areas:
+			'financial financial financial'
+			'performance performance performance'
+			'. allocation .';
+	}
+}
+
+.analytics-section__financial-track {
+	grid-area: financial;
+	border-radius: var(--radius-xl);
+	background-color: var(--background-color-secondary);
+}
+
+.analytics-section__allocation-track {
+	border-radius: var(--radius-xl);
+	grid-area: allocation;
+	background-color: var(--background-color-secondary);
+}
+
+.analytics-section__performance-track {
+	grid-area: performance;
+	border-radius: var(--radius-xl);
+	background-color: var(--background-color-secondary);
+}
