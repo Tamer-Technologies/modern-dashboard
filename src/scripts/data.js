@@ -1,6 +1,6 @@
-export const sidebarSectionLeft = [
+export const sidebarSectionsLeft = [
 	{
-		section: 'DASHBOARD',
+		title: 'DASHBOARD',
 		list: [
 			{
 				title: 'Overview',
@@ -65,7 +65,7 @@ export const sidebarSectionLeft = [
 		],
 	},
 	{
-		section: 'SETTINGS',
+		title: 'SETTINGS',
 		list: [
 			{
 				title: 'Messages',

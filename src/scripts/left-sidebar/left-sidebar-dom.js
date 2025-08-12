@@ -1,4 +1,4 @@
-import { user, sidebarSectionLeft } from '../data';
+import { user, sidebarSectionsLeft } from '../data';
 
 function renderSidebarData(containerClass, htmlString) {
 	const containerDOM = document.querySelector(`.${containerClass}`);
@@ -27,23 +27,23 @@ function renderSidebarUser() {
 
 function renderSidebarSections() {
 	let sidebarSectionsHTML = '';
-	sidebarSectionLeft.forEach((section) => {
-		let listItems = '';
-		section.list.forEach((list) => {
-			listItems += `
-        <li class="sidebar-left__nav-item">
-          ${list.svgIcon}
-          <span class="sidebar-left__nav-text">${list.title}</span>
+	sidebarSectionsLeft.forEach((section) => {
+		let pages = '';
+		section.list.forEach((page) => {
+			pages += `
+        <li class="sidebar-left__nav-item" data-page-title="${page.title}">
+          ${page.svgIcon}
+          <span class="sidebar-left__nav-text">${page.title}</span>
         </li>
       `;
 		});
 
 		sidebarSectionsHTML += `
       <div class="sidebar-left__section">
-						<span class="sidebar-left__section-title">${section.section}</span>
+						<span class="sidebar-left__section-title">${section.title}</span>
 						<nav class="sidebar-left__nav">
 							<ul class="sidebar-left__nav-list">
-								${listItems}
+								${pages}
 							</ul>
 						</nav>
 					</div>
