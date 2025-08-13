@@ -1,10 +1,10 @@
-import { pages } from './dom-pages';
+import { getPage } from './dom-pages';
 
 const container = document.querySelector('.main__section');
 const pageNavButton = document.querySelectorAll('.sidebar-left__nav-item');
 
 function showPage(pageTitle) {
-	const page = pages.find((page) => page.title === pageTitle);
+	const page = getPage(pageTitle);
 	container.replaceChildren();
 	container.innerHTML = `
     <h2 class="main__section-title">${page.title.toUpperCase()}</h2>
