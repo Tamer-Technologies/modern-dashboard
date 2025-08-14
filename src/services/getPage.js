@@ -1,4 +1,4 @@
-import { sidebarSectionsLeft } from './data';
+import { sidebarSectionsLeft } from '../core/data';
 
 export function getPage(pageTitle) {
 	for (const section of sidebarSectionsLeft) {
