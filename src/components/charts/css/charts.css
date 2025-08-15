@@ -36,8 +36,3 @@
 	aspect-ratio: 1/1;
 	background-color: var(--primary-color);
 }
-
-.chart-body {
-	padding-top: var(--space-md);
-	min-height: 130px;
-}

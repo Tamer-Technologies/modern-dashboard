@@ -1,0 +1,4 @@
+.chart-body {
+	padding-top: var(--space-md);
+	min-height: 130px;
+}
