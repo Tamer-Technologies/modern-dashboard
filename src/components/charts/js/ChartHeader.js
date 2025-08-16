@@ -1,4 +1,4 @@
-import { toUpperFirst } from '../../../utilities/textFormat';
+import { toUpperFirst } from '../../../utilities/format';
 import { createChartColor } from './ChartColor';
 
 export function createChartHeader(title, colors) {
