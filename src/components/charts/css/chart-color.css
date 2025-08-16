@@ -1,0 +1,12 @@
+.chart-color {
+	display: flex;
+	align-items: center;
+	gap: var(--space-md);
+}
+
+.chart-color__color {
+	width: var(--space-md);
+	border-radius: var(--radius-full);
+	aspect-ratio: 1/1;
+	background-color: var(--primary-color);
+}
