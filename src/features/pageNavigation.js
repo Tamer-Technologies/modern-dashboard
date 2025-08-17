@@ -8,7 +8,7 @@ function showPage(pageTitle) {
 	container.replaceChildren();
 	container.innerHTML = `
     <h2 class="main__section-title">${page.title.toUpperCase()}</h2>
-		<div class="main__section-body">${page.html}</div>
+		<div class="main__section-body">${page.renderPage()}</div>
   `;
 }
 
