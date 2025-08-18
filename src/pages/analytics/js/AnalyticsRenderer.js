@@ -45,23 +45,30 @@ export function renderAnalytics() {
       <div class="analytics-section__analytic-charts">
 
         <div class="analytics-section__financial-track">
-            ${createExtendedChart('financial', 'bar', 'financial-track-chart', [
-							'return',
-							'expense',
-						])}
+            ${createExtendedChart(
+							'financial',
+							'bar',
+							'financial-track-chart',
+							analyticData.monthlyBarChart.datasets.map((data) => data.label)
+						)}
         </div>
 
         <div class="analytics-section__allocation-track">
-          ${createDonutChart('allocation', 'donut', 'allocation-chart', [
-						'return',
-					])}
+          ${createDonutChart(
+						'allocation',
+						'donut',
+						'allocation-chart',
+						analyticData.donutChart.datasets.map((data) => data.label)
+					)}
         </div>
 
         <div class="analytics-section__performance-track">
-          ${createExtendedChart('financial', 'bar', 'financial-track-chart', [
-						'potato',
-						'watato',
-					])}
+          ${createExtendedChart(
+						'financial',
+						'bar',
+						'financial-track-chart',
+						analyticData.monthlyPerformance.datasets.map((data) => data.label)
+					)}
         </div>
 
       </div>

@@ -2,5 +2,5 @@
 	min-height: 100%;
 	padding: var(--space-lg);
 	display: grid;
-	grid-template-rows: auto auto;
+	grid-template-rows: auto 1fr;
 }

@@ -1,0 +1,89 @@
+{
+	"metrics": {
+		"overview": {
+			"currentValue": 250500,
+			"changeToday": {
+				"amount": 5.5
+			},
+			"totalInvested": {
+				"amount": 210000,
+				"lastMonth": {
+					"amount": 205000
+				}
+			},
+			"portfolioReturn": {
+				"percentage": 19.3,
+				"lastMonth": {
+					"percentage": 17.8
+				}
+			}
+		}
+	},
+
+	"monthlyBarChart": {
+		"months": [
+			"Jan",
+			"Feb",
+			"Mar",
+			"Apr",
+			"May",
+			"Jun",
+			"Jul",
+			"Aug",
+			"Sep",
+			"Oct",
+			"Nov",
+			"Dec"
+		],
+		"datasets": [
+			{
+				"label": { "title": "sales", "color": "#b9fd60" },
+				"values": [
+					9500, 8800, 10500, 10200, 9200, 8500, 9100, 9900, 10700, 11500, 9800,
+					9200
+				]
+			},
+			{
+				"label": { "title": "marketing", "color": "#2EA928" },
+				"values": [
+					4200, 4900, 4500, 4300, 5100, 4700, 4400, 4600, 4100, 4900, 4000, 5000
+				]
+			},
+			{
+				"label": { "title": "operations", "color": "#2F6D2C" },
+				"values": [
+					3500, 3900, 3700, 3800, 3400, 3300, 3500, 3700, 3900, 4100, 3600, 3800
+				]
+			}
+		]
+	},
+	"donutChart": {
+		"datasets": [
+			{
+				"label": { "title": "stocks", "color": "#b9fd60" },
+				"value": 45,
+				"amount": 112500
+			},
+			{
+				"label": { "title": "bonds", "color": "#2EA928" },
+				"value": 25,
+				"amount": 62500
+			}
+		],
+		"totalValue": 250000
+	},
+
+	"monthlyPerformance": {
+		"months": ["Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+		"datasets": [
+			{
+				"label": { "title": "income", "color": "#b9fd60" },
+				"value": [42000, 58000, 64000, 52000, 68000, 72000]
+			},
+			{
+				"label": { "title": "expenses", "color": "#2EA928" },
+				"value": [38000, 42000, 46000, 41000, 48000, 52000]
+			}
+		]
+	}
+}
