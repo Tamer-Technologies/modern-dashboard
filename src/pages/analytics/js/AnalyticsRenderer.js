@@ -7,6 +7,7 @@ import {
 import { createDonutChart } from '../../../components/charts/js/DonutChart';
 import { createExtendedChart } from '../../../components/charts/js/ExtendedChart';
 import { createMetricCard } from '../../../components/metric-card/js/MetricCard';
+import { renderFinancialChart } from '../../../components/charts/charts-configration/financial-chart';
 
 export function renderAnalytics() {
 	const analytics = `
@@ -64,9 +65,9 @@ export function renderAnalytics() {
 
         <div class="analytics-section__performance-track">
           ${createExtendedChart(
-						'financial',
-						'bar',
-						'financial-track-chart',
+						'performance',
+						'line',
+						'performance-track-chart',
 						analyticData.monthlyPerformance.datasets.map((data) => data.label)
 					)}
         </div>
@@ -74,6 +75,10 @@ export function renderAnalytics() {
       </div>
     </div>
   `;
+
+	setTimeout(() => {
+		renderFinancialChart();
+	}, 0);
 
 	return analytics;
 }

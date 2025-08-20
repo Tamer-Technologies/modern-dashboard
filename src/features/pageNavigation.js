@@ -3,7 +3,7 @@ import { getPage } from '../services/getPage';
 const container = document.querySelector('.main__section');
 const pageNavButton = document.querySelectorAll('.sidebar-left__nav-item');
 
-function showPage(pageTitle) {
+export function showPage(pageTitle) {
 	const page = getPage(pageTitle);
 	container.replaceChildren();
 	container.innerHTML = `
