@@ -8,6 +8,7 @@ import { createDonutChart } from '../../../components/charts/js/DonutChart';
 import { createExtendedChart } from '../../../components/charts/js/ExtendedChart';
 import { createMetricCard } from '../../../components/metric-card/js/MetricCard';
 import { renderFinancialChart } from '../../../components/charts/charts-configration/financial-chart';
+import { renderPerformanceChart } from '../../../components/charts/charts-configration/performance-chart';
 
 export function renderAnalytics() {
 	const analytics = `
@@ -78,6 +79,7 @@ export function renderAnalytics() {
 
 	setTimeout(() => {
 		renderFinancialChart();
+		renderPerformanceChart();
 	}, 0);
 
 	return analytics;
