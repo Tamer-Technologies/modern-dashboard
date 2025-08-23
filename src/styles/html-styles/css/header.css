@@ -1,0 +1,40 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: var(--space-em-md);
+	grid-area: header;
+	border-bottom: 1px solid var(--text-color-gray);
+	background-color: var(--background-color-primary);
+	position: sticky;
+	top: 0;
+
+	@media (width >= 62em) {
+		display: none;
+	}
+}
+
+.hamburger-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 44px;
+	aspect-ratio: 1/1;
+	outline: none;
+	background-color: transparent;
+	border: none;
+	color: var(--text-color-gray);
+	cursor: pointer;
+	transition: var(--animation-delay-x) ease-out;
+}
+
+.hamburger-button:focus,
+.hamburger-button:hover,
+.hamburger-button:active {
+	color: var(--primary-color);
+}
+
+.hamburger-button svg {
+	width: 100%;
+	height: 100%;
+}

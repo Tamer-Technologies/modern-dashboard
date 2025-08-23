@@ -5,6 +5,7 @@ import './components/charts/js/Charts';
 import './features/pageNavigation';
 import './components/metric-card/css/metrics-card.css';
 import './pages/analytics/css/analytics-page.css';
+import './features/HamburgerMenu';
 import { showPage } from './features/pageNavigation';
 
 showPage('Analytics');

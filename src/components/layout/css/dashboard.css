@@ -1,17 +1,30 @@
 .container {
-	min-height: 100vh;
+	min-height: 100dvh;
 	display: grid;
-	grid-template-columns: minmax(280px, 2fr) 9fr;
+	grid-template-columns: minmax(300px, 2fr) 11fr;
+	grid-template-areas: 'sidebar main';
+
+	@media (width < 62em) {
+		grid-template: auto 1fr / 1fr;
+		grid-template-areas: 'header' 'main';
+	}
+}
+
+main {
+	grid-area: main;
+	width: 100%;
+	max-width: 90em;
+	margin-inline: auto;
 }
 
 .main__section {
-	min-height: 100%;
 	padding: var(--space-2xl);
 	display: grid;
-	grid-template-rows: var(--space-3xl) 1fr;
+	grid-template-rows: auto 1fr;
 }
 
 .main__section-title {
+	margin-bottom: var(--space-em-sm);
 	font-size: var(--font-size-4xl);
 	color: var(--text-color-light);
 }
