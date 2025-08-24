@@ -1,20 +1,17 @@
 .chart-header {
-	display: flex;
-	flex-wrap: wrap;
-	gap: var(--space-md) var(--space-2xl);
-	justify-content: space-between;
-	align-items: start;
-	color: var(--text-color-light);
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: var(--space-em-md);
 }
 
 .chart-header__chart-title {
-	font-size: var(--font-size-base);
-	font-weight: var(--font-weight-semibold);
+	font-size: var(--font-weight-base);
+	color: var(--text-color-light);
 }
 
 .chart-header__chart-labels {
-	flex-wrap: wrap;
 	display: flex;
-	gap: var(--space-md) var(--space-2xl);
-	justify-content: flex-end;
+	flex-wrap: wrap;
+	gap: var(--space-em-md);
+	justify-content: end;
 }

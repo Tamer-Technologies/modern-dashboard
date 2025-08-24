@@ -1,34 +1,39 @@
 .metrics-card {
 	background-color: var(--background-color-secondary);
-	border-radius: var(--radius-xl);
-	padding: var(--space-lg);
+	border-radius: var(--radius-md);
 	display: grid;
 	grid-template-rows: auto 1fr;
+	padding: var(--space-em-md);
 }
 
 .metrics-card__header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--space-em-md);
 }
 
 .metrics-card__title {
 	font-size: var(--font-size-base);
-	font-weight: var(--font-weight-semibold);
+	place-self: start;
+}
+
+.metrics-card__time {
+	place-self: end;
 }
 
 .metrics-card__body {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	padding-top: var(--space-md);
+	grid-template-columns: auto 1fr;
+	gap: var(--space-em-md);
 }
 
 .metrics-card__value {
+	color: var(--primary-color);
 	place-self: center start;
 	font-size: var(--font-size-2xl);
-	color: var(--primary-color);
+	font-weight: var(--font-weight-semibold);
 }
 
 .metrics-card__chart {
-	aspect-ratio: 3/1;
+	max-height: 12.5em;
 }

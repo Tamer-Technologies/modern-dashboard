@@ -89,3 +89,8 @@ span {
 button {
 	-webkit-tap-highlight-color: transparent !important;
 }
+
+canvas {
+	height: 100% !important;
+	width: 100% !important;
+}

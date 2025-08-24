@@ -10,23 +10,22 @@ import { createMetricCard } from '../../../components/metric-card/js/MetricCard'
 import { renderFinancialChart } from '../../../components/charts/charts-configration/financial-chart';
 import { renderPerformanceChart } from '../../../components/charts/charts-configration/performance-chart';
 import { renderAllocationChart } from '../../../components/charts/charts-configration/allocation-chart';
+import { color } from 'chart.js/helpers';
 
 export function renderAnalytics() {
 	const analytics = `
     <div class="analytics-section">
-      <div class="analytics-section__metrics">
-        <span class="analytics-section__current-value"
+				<span class="analytics-section__current-value"
           >Current Value: 
           ${numToUSD(analyticData.metrics.overview.currentValue)}
           </span
         >
-        <div class="analytics-section__metrics-cards">
-          ${createMetricCard(
-						numToUSD(analyticData.metrics.overview.changeToday.amount),
-						'change today',
-						'today',
-						'today-amount-chart'
-					)}
+        ${createMetricCard(
+					numToUSD(analyticData.metrics.overview.changeToday.amount),
+					'change today',
+					'today',
+					'today-amount-chart'
+				)}
           ${createMetricCard(
 						numToUSDCollapse(
 							analyticData.metrics.overview.totalInvested.amount
@@ -43,11 +42,8 @@ export function renderAnalytics() {
 						'last month',
 						'portfolio-return-chart'
 					)}
-        </div>
-      </div>
-      <div class="analytics-section__analytic-charts">
 
-        <div class="analytics-section__financial-track">
+					<div class="analytics-section__financial-track">
             ${createExtendedChart(
 							'financial',
 							'bar',
@@ -61,7 +57,11 @@ export function renderAnalytics() {
 						'allocation',
 						'donut',
 						'allocation-chart',
-						analyticData.donutChart.datasets.map((data) => data.label)
+						analyticData.donutChart.datasets.map((data) => data.label),
+						analyticData.donutChart.datasets.map((data) => ({
+							title: `${data.amount}`,
+							color: data.label.color,
+						}))
 					)}
         </div>
 
@@ -73,7 +73,7 @@ export function renderAnalytics() {
 						analyticData.monthlyPerformance.datasets.map((data) => data.label)
 					)}
         </div>
-
+				
       </div>
     </div>
   `;

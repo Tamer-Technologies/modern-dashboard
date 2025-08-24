@@ -4,9 +4,9 @@ import { createChartLabel } from './ChartLabel';
 export function createChartHeader(title, labels) {
 	const header = `
     <div class="chart-header">
-		<span class="chart-header__chart-title">
+		<h6 class="chart-header__chart-title">
     ${toUpperFirst(title)}
-    </span>
+    </h6>
 		<div class="chart-header__chart-labels">
       ${labels.map((label) => createChartLabel(label)).join('')}
 		</div>

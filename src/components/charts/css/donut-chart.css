@@ -1,6 +1,27 @@
 .donut-chart-container {
-	min-height: 100%;
-	padding: var(--space-lg);
+	background-color: var(--background-color-secondary);
+	border-radius: var(--radius-md);
 	display: grid;
+	padding: var(--space-em-md);
 	grid-template-rows: auto 1fr;
+	gap: var(--space-em-md);
+}
+
+.donut-chart {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: var(--space-em-md);
+}
+
+.donut-chart__labels {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	gap: var(--space-em-md);
+}
+
+.donut__chart {
+	min-height: 12.5em;
+	max-height: 15.75em;
 }

@@ -1,11 +1,5 @@
 .chart-body {
-	width: 100%;
-	height: 100%;
-	aspect-ratio: 16/2.5;
-	padding-top: var(--space-md);
 }
 
 .chart-body canvas {
-	height: 100% !important;
-	width: 100% !important;
 }

@@ -1,6 +1,18 @@
 .extended-chart-container {
-	min-height: 100%;
-	padding: var(--space-lg);
+	background-color: var(--background-color-secondary);
+	border-radius: var(--radius-md);
 	display: grid;
+	padding: var(--space-em-md);
 	grid-template-rows: auto 1fr;
+	gap: var(--space-em-md);
+}
+
+.bar__chart {
+	min-height: 12.5em;
+	max-height: 15.75em;
+}
+
+.line__chart {
+	min-height: 12.5em;
+	max-height: 18.75em;
 }
