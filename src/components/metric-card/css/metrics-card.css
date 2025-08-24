@@ -3,6 +3,7 @@
 	border-radius: var(--radius-md);
 	display: grid;
 	grid-template-rows: auto 1fr;
+	gap: var(--space-em-md);
 	padding: var(--space-em-md);
 }
 
@@ -18,7 +19,7 @@
 }
 
 .metrics-card__time {
-	place-self: end;
+	place-self: start end;
 }
 
 .metrics-card__body {
@@ -35,5 +36,6 @@
 }
 
 .metrics-card__chart {
+	min-height: 7.5em;
 	max-height: 12.5em;
 }

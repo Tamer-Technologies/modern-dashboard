@@ -7,3 +7,39 @@
 .analytics-section__current-value {
 	color: var(--primary-color);
 }
+
+@container analytics (width > 40em) {
+	.analytics-section {
+		grid-template-columns: repeat(2, 1fr);
+		grid-auto-flow: dense;
+	}
+	.analytics-section__current-value {
+		grid-column: 1 / -1;
+	}
+
+	.analytics-section__financial-track {
+		grid-column: span 2;
+	}
+
+	.analytics-section__performance-track {
+		grid-column: span 2;
+	}
+}
+
+@container analytics (width > 66em) {
+	.analytics-section {
+		grid-template-columns: repeat(3, 1fr);
+		grid-auto-flow: dense;
+	}
+	.analytics-section__current-value {
+		grid-column: 1 / -1;
+	}
+
+	.analytics-section__financial-track {
+		grid-column: span 2;
+	}
+
+	.analytics-section__performance-track {
+		grid-column: span 3;
+	}
+}

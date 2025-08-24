@@ -36,7 +36,7 @@ export function renderFinancialChart() {
 				label: section.label.title,
 				data: section.values,
 				borderRadius: 9999,
-				barThickness: 7,
+				barThickness: 5,
 				backgroundColor: section.label.color,
 			})),
 		},
