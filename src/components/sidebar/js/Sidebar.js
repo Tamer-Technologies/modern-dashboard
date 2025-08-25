@@ -1,4 +1,5 @@
-import { user, sidebarSectionsLeft } from '../../../core/data';
+import { user, sidebarSections } from '../../../core/data';
+import { initLeftSidebarSearch } from './sidebarSearch';
 
 function renderSidebarData(containerClass, htmlString) {
 	const containerDOM = document.querySelector(`.${containerClass}`);
@@ -17,32 +18,32 @@ function renderSidebarUser() {
           />
         </div>
       </div>
-      <span class="sidebar-left__user-name">${user.name}</span>
+      <span class="sidebar__user-name">${user.name}</span>
     `;
 
-	const containerClass = 'sidebar-left__user';
+	const containerClass = 'sidebar__user';
 
 	renderSidebarData(containerClass, sidebarUserHTML);
 }
 
 function renderSidebarSections() {
 	let sidebarSectionsHTML = '';
-	sidebarSectionsLeft.forEach((section) => {
+	sidebarSections.forEach((section) => {
 		let pages = '';
 		section.list.forEach((page) => {
 			pages += `
-        <li class="sidebar-left__nav-item" data-page-title="${page.title}">
+        <li class="sidebar__nav-item" data-page-title="${page.title}">
           ${page.svgIcon}
-          <span class="sidebar-left__nav-text">${page.title}</span>
+          <span class="sidebar__nav-text">${page.title}</span>
         </li>
       `;
 		});
 
 		sidebarSectionsHTML += `
-      <div class="sidebar-left__section">
-						<span class="sidebar-left__section-title">${section.title}</span>
-						<nav class="sidebar-left__nav">
-							<ul class="sidebar-left__nav-list">
+      <div class="sidebar__section">
+						<span class="sidebar__section-title">${section.title}</span>
+						<nav class="sidebar__nav">
+							<ul class="sidebar__nav-list">
 								${pages}
 							</ul>
 						</nav>
@@ -50,12 +51,15 @@ function renderSidebarSections() {
     `;
 	});
 
-	const containerClass = 'sidebar-left__nav-sections';
+	const containerClass = 'sidebar__nav-sections';
 
 	renderSidebarData(containerClass, sidebarSectionsHTML);
 }
 
-export function renderSidebar() {
+function renderSidebar() {
 	renderSidebarUser();
 	renderSidebarSections();
 }
+
+renderSidebar();
+initLeftSidebarSearch();

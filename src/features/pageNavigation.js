@@ -1,7 +1,7 @@
 import { getPage } from '../services/getPage';
 
 const container = document.querySelector('.main__section');
-const pageNavButton = document.querySelectorAll('.sidebar-left__nav-item');
+const pageNavButton = document.querySelectorAll('.sidebar__nav-item');
 
 export function showPage(pageTitle) {
 	const page = getPage(pageTitle);

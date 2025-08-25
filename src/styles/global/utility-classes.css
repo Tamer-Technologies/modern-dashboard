@@ -3,14 +3,5 @@
 }
 
 .nav-item-focus {
-	color: var(--primary-color) !important;
-}
-
-.overlay {
-	position: fixed;
-	background-color: black;
-	opacity: 0.5;
-	inset: 0;
-	z-index: 9;
-	display: none;
+	color: var(--primary-color);
 }

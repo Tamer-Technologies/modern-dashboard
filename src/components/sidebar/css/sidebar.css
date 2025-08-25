@@ -1,4 +1,4 @@
-.sidebar-left {
+.sidebar {
 	grid-area: sidebar;
 	position: sticky;
 	top: 0;
@@ -21,7 +21,7 @@
 	}
 }
 
-.sidebar-left__close-button {
+.sidebar__close-button {
 	background-color: transparent;
 	border: none;
 	height: 44px;
@@ -38,14 +38,14 @@
 	}
 }
 
-.sidebar-left__close-button svg {
+.sidebar__close-button svg {
 	height: 100%;
 	width: 100%;
 }
 
-.sidebar-left__close-button:focus,
-.sidebar-left__close-button:hover,
-.sidebar-left__close-button:active {
+.sidebar__close-button:focus,
+.sidebar__close-button:hover,
+.sidebar__close-button:active {
 	color: var(--primary-color);
 }
 
@@ -57,13 +57,13 @@
 	display: block;
 }
 
-.sidebar-left__user {
+.sidebar__user {
 	display: flex;
 	align-items: center;
 	gap: var(--space-em-md);
 }
 
-.sidebar-left__user-name {
+.sidebar__user-name {
 	font-weight: var(--font-weight-semibold);
 	color: var(--text-color-light);
 }
@@ -116,18 +116,18 @@
 	cursor: pointer;
 }
 
-.sidebar-left__section {
+.sidebar__section {
 	max-width: 14.063em;
 	margin-bottom: var(--space-em-xl);
 }
 
-.sidebar-left__section-title {
+.sidebar__section-title {
 	font-weight: var(--font-weight-semibold);
 	margin-bottom: var(--space-em-md);
 	padding-inline: var(--space-em-md);
 }
 
-.sidebar-left__nav-item {
+.sidebar__nav-item {
 	padding: var(--space-em-md) var(--space-em-xl);
 	border-radius: var(--radius-md);
 	display: flex;
@@ -136,12 +136,12 @@
 	cursor: pointer;
 }
 
-.sidebar-left__nav-item:hover {
+.sidebar__nav-item:hover {
 	background-color: var(--primary-color);
 	color: var(--background-color-primary);
 }
 
-.sidebar-left .logo-container {
+.sidebar .logo-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;

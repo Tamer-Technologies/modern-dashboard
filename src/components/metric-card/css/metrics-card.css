@@ -18,7 +18,7 @@
 	place-self: start;
 }
 
-.metrics-card__time {
+.metrics-card__duration {
 	place-self: start end;
 }
 

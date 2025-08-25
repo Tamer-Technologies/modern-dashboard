@@ -1,6 +1,6 @@
 const openNavButton = document.querySelector('#open-nav-button');
 const closeNavButton = document.querySelector('#close-nav-button');
-const sidebar = document.querySelector('.sidebar-left');
+const sidebar = document.querySelector('.sidebar');
 const overlay = document.querySelector('.overlay');
 
 openNavButton.addEventListener('click', openSidebar);

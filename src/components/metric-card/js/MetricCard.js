@@ -7,9 +7,9 @@ export function createMetricCard(value, title, duration, chartId) {
       <div class="metrics-card__header">
         <h6 class="metrics-card__title">${title
 					.split(' ')
-					.map((word) => toUpperFirst(word.toLowerCase()))
+					.map((word) => toUpperFirst(word))
 					.join(' ')}</h6>
-        <span class="metrics-card__time">${duration}</span>
+        <span class="metrics-card__duration">${duration}</span>
       </div>
       <div class="metrics-card__body">
         <div class="metrics-card__value">

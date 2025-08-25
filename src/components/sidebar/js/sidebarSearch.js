@@ -1,12 +1,13 @@
 export function initLeftSidebarSearch() {
-	const searchInput = document.querySelector('#sidebar-left__search-input');
-	const listItems = document.querySelectorAll('.sidebar-left__nav-item');
+	const searchInput = document.querySelector('#sidebar__search-input');
+	const pages = document.querySelectorAll('.sidebar__nav-item');
 
 	searchInput.addEventListener('input', (e) => {
 		const value = e.target.value.toLowerCase();
-		listItems.forEach((item) => {
-			const isVisible = item.innerText.toLowerCase().includes(value);
-			item.classList.toggle('hide', !isVisible);
+		pages.forEach((page) => {
+			const pageTitle = page.dataset.pageTitle;
+			const isVisible = pageTitle.toLowerCase().includes(value);
+			page.classList.toggle('hide', !isVisible);
 		});
 	});
 }

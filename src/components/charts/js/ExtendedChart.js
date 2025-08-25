@@ -3,7 +3,7 @@ import { createChartHeader } from './ChartHeader';
 
 export function createExtendedChart(title, type, id, labels) {
 	const chart = `
-  <div class="extended-chart-container">
+  <div class="extended-chart">
 		${createChartHeader(title, labels)}
 
 		${createChartBody(type, id)}
