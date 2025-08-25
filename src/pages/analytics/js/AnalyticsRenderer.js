@@ -7,10 +7,12 @@ import {
 import { createDonutChart } from '../../../components/charts/js/DonutChart';
 import { createExtendedChart } from '../../../components/charts/js/ExtendedChart';
 import { createMetricCard } from '../../../components/metric-card/js/MetricCard';
-import { renderFinancialChart } from '../../../components/charts/charts-configration/financial-chart';
-import { renderPerformanceChart } from '../../../components/charts/charts-configration/performance-chart';
-import { renderAllocationChart } from '../../../components/charts/charts-configration/allocation-chart';
-import { color } from 'chart.js/helpers';
+import { renderFinancialChart } from '../../../components/charts/charts-configration/financialChart';
+import { renderPerformanceChart } from '../../../components/charts/charts-configration/performanceChart';
+import { renderAllocationChart } from '../../../components/charts/charts-configration/allocationChart';
+import { renderTodayAmountChart } from '../../../components/charts/charts-configration/todayAmountChart';
+import { renderTotalInvestedChart } from '../../../components/charts/charts-configration/totalInvestedChart';
+import { renderPortfolioReturnChart } from '../../../components/charts/charts-configration/portfolioReturnChart';
 
 export function renderAnalytics() {
 	const analytics = `
@@ -79,6 +81,9 @@ export function renderAnalytics() {
   `;
 
 	setTimeout(() => {
+		renderTodayAmountChart();
+		renderTotalInvestedChart();
+		renderPortfolioReturnChart();
 		renderFinancialChart();
 		renderPerformanceChart();
 		renderAllocationChart();
